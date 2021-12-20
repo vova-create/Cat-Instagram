@@ -1,0 +1,18 @@
+
+.catWrapper {
+    background-color: whitesmoke;
+    border: 1px solid wheat;
+}
+
+.catImage img {
+    margin: 1vh;
+    border: 2px solid darkgray;
+}
+
+.fontFamily {
+    font-family: Futura;
+}
+
+.cardList {
+
+}
