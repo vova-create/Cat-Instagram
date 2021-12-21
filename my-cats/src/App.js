@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {useEffect, useState} from "react";
 import CatList from "./components/CatList";
 import { Routes, Route, Link } from "react-router-dom";
 import MyPage from "./components/MyPage";
 import DownLoadMyPage from "./components/DownLoadMyPage";
 
 function App() {
-
-
   return (
     <div className="App">
-        <div className='links'>
-        <Link to="/">CatList</Link>
-        <Link to="/my-page">My Page</Link>
-        <Link to="/download-my-page">Download my page</Link>
+        <div className='allWrapper'>
+        <Link className='links' to="/">CatList</Link>
+        <Link className='links' to="/my-photo">My Photo</Link>
+        <Link className='links' to="/download-my-photo">Download my photo</Link>
         </div>
         <Routes>
-        <Route path="/" element={<CatList/>}/>
-          <Route path="/my-page" element={<MyPage/>}/>
-          <Route path="/download-my-page" element={<DownLoadMyPage/>}/>
+            <Route path="/" element={<CatList/>}/>
+          <Route path="/my-photo" element={<MyPage/>}/>
+          <Route path="/download-my-photo" element={<DownLoadMyPage/>}/>
       </Routes>
     </div>
   );

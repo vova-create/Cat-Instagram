@@ -1,18 +1,22 @@
 
 .catWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     background-color: whitesmoke;
     border: 1px solid wheat;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .catImage img {
     margin: 1vh;
     border: 2px solid darkgray;
 }
-
 .fontFamily {
+    color: orange;
     font-family: Futura;
-}
-
-.cardList {
-
+    margin: 5px;
+    cursor: pointer;
 }
