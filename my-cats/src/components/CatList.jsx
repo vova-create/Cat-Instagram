@@ -5,10 +5,9 @@ function CatList() {
     const [data, setData] = useState([])
     const [visable, setVisable] = useState(4)
     const [title, setTitle] = useState(true)
-    // console.log(data.name)
 
     useEffect( () => {
-        const req  = fetch('https://api.thecatapi.com/v1/breeds')
+         fetch('https://api.thecatapi.com/v1/breeds')
             .then((res) => res.json())
             .then((data) => setData(data))
     },[])
@@ -19,7 +18,6 @@ function CatList() {
     const showMoreItems = () => {
         setVisable((preValue) => preValue + 4)
     }
-
     return (
         <div className={style.cardList}>
             <h1 className={style.fontFamily} onMouseOver={changeTitle}>{title ? 'Cat' : 'Instagram'}</h1>

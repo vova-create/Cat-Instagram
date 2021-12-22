@@ -10,8 +10,8 @@ function App() {
     <div className="App">
         <div className='allWrapper'>
         <Link className='links' to="/">CatList</Link>
-        <Link className='links' to="/my-photo">My Photo</Link>
-        <Link className='links' to="/download-my-photo">Download my photo</Link>
+        <Link className='links' to="/my-photo">My cat photo</Link>
+        <Link className='links' to="/download-my-photo">Download my cat photo</Link>
         </div>
         <Routes>
             <Route path="/" element={<CatList/>}/>
@@ -21,5 +21,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
